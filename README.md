@@ -34,7 +34,7 @@ NLBは、ターゲットは、「リスナー」タブの「転送先」の箇�
 デフォルトで構成される NLBの Target gourp は全て Target Type が `IP`で、Master Node のIPが直指定されている。`Type:LoadBalancer` で作成したものだけ `Instance` になっている。
 ![image](https://user-images.githubusercontent.com/8530492/146731278-ccaa885d-f525-476a-a0b7-f2909b72bba6.png)
 
-*Registered Target が IP の場合(ROSA作成時にデフォルトで作成されるもの) *
+*Registered Target が IP の場合(ROSA作成時にデフォルトで作成されるもの)*
 ![image](https://user-images.githubusercontent.com/8530492/146731857-8415d4b3-627e-4b76-8c84-7b395d40c843.png)
 
 *Registered Target が Instance の場合(Project内から type:LoadBalancerを作成した時)*
