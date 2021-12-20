@@ -13,11 +13,21 @@ http://a31fff5fab46d45fd8e05b0cd5de158b-e950f37eb406a33a.elb.ap-northeast-1.amaz
 
 のような長いドメイン名が自動で払い出される。
 
-CLBは、ターゲットとしてインスタンスが列挙される。Master から Infra、Worker 全て列挙されるので Worker Node だけ残して「ロードバランサーから削除」しても動いた。（そもそも Worker Node だけターゲットにする方法があるのだと思う)
-
-NLBは、ターゲットは、「リスナー」タブの「転送先」の箇所に「Target Groups」名で指定されている。これも中を見ると全ての Node が Target として指定されている。これも Worker Node だげ残して「Deregister」する事ができる。
-
 CLBとNLBを同時にデプロイしても動く。
+
+### CLBについて
+CLBは、ターゲットとしてインスタンスが列挙される。
+Master から Infra、Worker 全て列挙されるので Worker Node だけ残して「ロードバランサーから削除」しても動いた。（そもそも Worker Node だけターゲットにする方法があるのかもしれない)
+
+### NLBについて
+
+NLBは、ターゲットは、「リスナー」タブの「転送先」の箇所に「Target Groups」名で指定されている。
+これも中を見ると全ての Node が Target として指定されている。これも Worker Node だげ残して「Deregister」する事ができる。（そもそも Worker Node だけターゲットにする方法があるのかもしれない)
+
+デフォルトで構成される NLBの Target gourp は全て Target Type が `IP`で、Master Node のIPが直指定されている。`Type:LoadBalancer` で作成したものだけ `Instance` になっている。
+![image](https://user-images.githubusercontent.com/8530492/146731278-ccaa885d-f525-476a-a0b7-f2909b72bba6.png)
+
+
 
 ### 全てをデプロイした後
 
