@@ -22,7 +22,7 @@ CLBとNLBを同時にデプロイしても動く。
 CLBは、ターゲットとしてインスタンスが列挙される。
 Master から Infra、Worker 全て列挙されるので Worker Node だけ残して「ロードバランサーから削除」しても動いた。（そもそも Worker Node だけターゲットにする方法があるのかもしれない)
 
-`service.beta.kubernetes.io/aws-load-balancer-target-node-labels` という `annotation`が用意されてい[1]て Target Worker Node の labelが指定できるようになっている(未テスト)
+`service.beta.kubernetes.io/aws-load-balancer-target-node-labels` という `annotation`が用意されていて [1]Target Worker Node の labelが指定できるようになっている(未テスト)
 
 [1] https://kubernetes.io/docs/concepts/services-networking/service/#other-elb-annotations 
 
