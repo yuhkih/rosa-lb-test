@@ -8,6 +8,7 @@ ROSA 上でこのファイルセットが動く事を確認
 
 CLB の場合
 http://a4d653831a50d458d8f7ace5ae1f516b-1746624012.ap-northeast-1.elb.amazonaws.com/
+
 NLB の場合 
 http://a31fff5fab46d45fd8e05b0cd5de158b-e950f37eb406a33a.elb.ap-northeast-1.amazonaws.com/
 
