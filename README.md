@@ -3,7 +3,9 @@ ROSA 上でこのファイルセットが動く事を確認
 
 ### メモ
 ・デプロイされる Pod は、ACMの test 用に作られた単純な nginx の Pod
+
 ・AWS上には、新規に Classic LoadBalncer がデプロイされた。
+
 ・アクセスできるようになるまで少し時間がかかる。
 
 CLB の場合
